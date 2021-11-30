@@ -13,8 +13,6 @@ A more detailed explanation of the project as well as the entire discussion of t
 ### Data Preview
 Instead of taking a pre-made image dataset, we scraped the meta information and images of the athletes participating in the water disciplines of the Tokyo 2020 Olympics. The decision for this website was made given the good data quality (e.g. all athletes were shot from the same angle) as well as the (okayish) amount of images of people.
 
-![Image Preview]()
-
 <div>
 <center>
 <img src="./reports/figures/task_preprocess_classification/label_examples.gif" width="1000"/>
