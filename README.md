@@ -12,14 +12,23 @@ A more detailed explanation of the project as well as the entire discussion of t
 ### Data Preview
 Instead of taking a pre-made image dataset, we scraped the meta information and images of the athletes participating in the water disciplines of the Tokyo 2020 Olympics. The decision for this website was made given the good data quality (e.g. all athletes were shot from the same angle) as well as the (okayish) amount of images of people.
 
-![Image Preview](./reports/figures/task_preprocess_classification/label_examples.gif)
+![Image Preview]()
+
+<div>
+<center>
+<img src="./reports/figures/task_preprocess_classification/label_examples.gif" width="1000"/>
+</center>
+</div>
+
 
 ### Performance
-Within this post we apply several evaluation methods. For this preview we showcase the confusion matrix of the multi-class classification model, as well as the head-to-head comparison of the hamming loss of the different classifiers.
+Within this post we apply several evaluation methods. For this preview we showcase the head-to-head comparison of the hamming loss of the different classifiers.
 
-![Confusion Matrix](./reports/figures/task_train_classification_multiclass/confusion_matrix.png | width=300)
-
-![Hamming Loss](./reports/blogpost/hamming_loss.png | width=300)
+<div>
+<center>
+<img src="./reports/blogpost/hamming_loss.png" width="700"/>
+</center>
+</div>
 
 ## Conclusion
 These results lead to quite interesting conclusions. First of all, interaction effects are important. That was particularly visible when looking at the performance of the combined single-classification model. Secondly, whether to use multi-class or multi-label depends heavily what the objective of the classification task is. If we face a black and white scenario, in which a partially correct prediction is worth nothing, then we should use multi-class. If on the other hand, also partial correctness is useful, then we should opt for the multi-label approach. Last but not least. The multi-class algorithm scales the worst. When having a large multi-output space this approach seems likely to fail quicker than the multi-label, which scales considerably better.
