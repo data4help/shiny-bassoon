@@ -1,4 +1,5 @@
-# psychic-potato
+# shiny-bassoon
+
 Building a face/ country classifier
 
 ## Summary
